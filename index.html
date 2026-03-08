@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wedding Invitation</title>
+<title>Francis & Nimatu</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,7 +24,7 @@
     font-family: 'Jost', sans-serif;
     background: var(--white);
     color: var(--text);
-    font-weight: 300;
+    font-weight: 500;
     overflow-x: hidden;
   }
 
@@ -37,7 +37,7 @@
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--gold-light);
     letter-spacing: 0.18em;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
   }
   nav a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
@@ -173,6 +173,7 @@
 
   /* ── GALLERY ── */
   #gallery { background: var(--dark); padding: 80px 0; text-align: center; }
+  /* #gallery { background: var(--dark); padding: 80px 0; text-align: center; } */
   #gallery .section-label { color: var(--gold); }
   #gallery h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: var(--white); margin-bottom: 2.5rem; }
   .slideshow {
@@ -186,14 +187,10 @@
   .slide {
     position: absolute; inset: 0;
     opacity: 0;
-    transition: opacity 0.9s ease;
+    transition: opacity 1.2s ease;
   }
   .slide.active { opacity: 1; }
   .slide img {
-    /* position: relative;
-    width: 100%; height: 100%;
-    object-fit: cover; */
-
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     object-fit:contain;
@@ -211,9 +208,9 @@
     font-size: 1.2rem;
     color: rgba(255,255,255,0.4);
   }
-  .slide-placeholder.s1 { background: linear-gradient(135deg, #2A2518, #3D3525); }
+  /* .slide-placeholder.s1 { background: linear-gradient(135deg, #2A2518, #3D3525); }
   .slide-placeholder.s2 { background: linear-gradient(135deg, #1E1C16, #2E2A1F); }
-  .slide-placeholder.s3 { background: linear-gradient(135deg, #252218, #38331F); }
+  .slide-placeholder.s3 { background: linear-gradient(135deg, #252218, #38331F); } */
   .slide-dots {
     display: flex; gap: 8px; justify-content: center; margin-top: 1.5rem;
   }
@@ -418,7 +415,7 @@
     </div>
     <div class="gold-divider"></div>
     <!--  actual date -->
-    <div class="cover-date">Sunday, the Twenty-nineth of March · Two Thousand and Twenty-Six</div>
+    <div class="cover-date">Sunday, 29th March, 2026</div>
   </div>
 </section>
 
@@ -431,23 +428,23 @@
     <div class="slide-nav next" onclick="changeSlide(1)">&#8594;</div>
 
     <!-- REPLACE these with your actual gallery images -->
-    <div class="slide active"><img src="image\gallery.jpeg" alt="Photo 1"></div>
+    <div class="slide active"><img src="images\gallery.jpeg" alt="Photo 1"></div>
      <div class="slide"><img src="images\picA.jpeg" alt="Photo 2"></div> 
     <div class="slide"><img src="images\picB.jpeg" alt="Photo 3"></div>
-
-    <div class="slide active"><div class="slide-placeholder s1"><div class="slide active"><img src="images\gallery.jpeg" alt="Photo 1"></div></div></div>
-    <div class="slide"><div class="slide-placeholder s2"><div class="slide active"><img src="images\pic1.jpeg" alt="Photo 1"></div></div></div>
-    <div class="slide"><div class="slide-placeholder s3"><div class="slide active"><img src="images\pic2.jpeg" alt="Photo 1"></div></div></div>
-    <div class="slide"><div class="slide-placeholder s4"><div class="slide active"><img src="images\pic9.jpeg" alt="Photo 1"></div></div></div>
-    <div class="slide"><div class="slide-placeholder s5"><div class="slide active"><img src="images\pic4.jpeg" alt="Photo 1"></div></div></div>
-    <div class="slide"><div class="slide-placeholder s6"><div class="slide active"><img src="images\pic5.jpeg" alt="Photo 1"></div></div></div> 
+    <div class="slide"><img src="images/picA.jpeg" alt="Photo 4"></div>
+    <div class="slide"><img src="images/picB.jpeg" alt="Photo 5"></div>
+    <div class="slide"><img src="images/pic1.jpeg" alt="Photo 6"></div>
+    <div class="slide"><img src="images/pic2.jpeg" alt="Photo 7"></div>
+    <div class="slide"><img src="images/pic9.jpeg" alt="Photo 8"></div>
+    <div class="slide"><img src="images/pic4.jpeg" alt="Photo 9"></div>
+    <div class="slide"><img src="images/pic5.jpeg" alt="Photo 10"></div>
   </div>
   <div class="slide-dots" id="dots"></div>
 </section>
 
 <!-- 4. RSVP -->
 <section id="rsvp">
-  <span class="section-label fade-in">Kindly reply by May 30th</span>
+  <span class="section-label fade-in">Kindly reply by 25th March, 2026</span>
   <h2 class="fade-in">Will you join us?</h2>
   <p class="subtitle fade-in">Your response helps us plan the perfect day</p>
 
@@ -545,7 +542,14 @@
 
 <!-- FOOTER -->
 <footer>
-  <span>Francis &amp; Nimatu</span> · March 29, 2026 · Made with love
+  <span>Francis &amp; Nimatu</span> · March 29, 2026 · Made with love <br>
+  <span>Designed by INVELLY</span> <BR><a href="https://wa.me/233200200107" target="_blank"> 0200200107
+    <!-- <a class="wa-btn" href="https://wa.me/233200200107" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="26" height="26">
+</a> -->
+  </svg>
+</a>
+
 </footer>
 
 <script>
@@ -571,7 +575,13 @@ function goToSlide(n) {
 
 function changeSlide(dir) { goToSlide(currentSlide + dir); }
 
-setInterval(() => changeSlide(1), 4000);
+let timer = setInterval(() => changeSlide(1), 6000);
+
+function changeSlide(dir) {
+  goToSlide(currentSlide + dir);
+  clearInterval(timer);
+  timer = setInterval(() => changeSlide(1), 4000);
+}
 
 // ── ATTENDANCE TOGGLE ──
 let attendance = 'yes';
@@ -588,7 +598,7 @@ function selectAttendance(val) {
 // 3. Paste the Apps Script code (see comment below) and deploy as Web App
 // 4. Replace GOOGLE_SCRIPT_URL below with your deployed URL
 
-const GOOGLE_SCRIPT_URL = 'https://maps.app.goo.gl/fkNKstbGqpkTb9qj9';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxpikvBUdW8fDOW37TA2tILFC3c8PwgsvokvxWL_9zZLi3Fg5AH-jZoiNjp6e1ZSk6nYw/exec';
 
 async function submitRSVP() {
   const name = document.getElementById('guestName').value.trim();
@@ -614,7 +624,7 @@ async function submitRSVP() {
     showSuccess(attendance === 'yes');
   } catch (e) {
     // no-cors always throws — treat as success if URL is set
-    if (GOOGLE_SCRIPT_URL !== 'https://w.w.w.maps.app.goo.gl/fkNKstbGqpkTb9qj9') {
+    if (GOOGLE_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbxpikvBUdW8fDOW37TA2tILFC3c8PwgsvokvxWL_9zZLi3Fg5AH-jZoiNjp6e1ZSk6nYw/exec') {
       showSuccess(attendance === 'yes');
     } else {
       alert('Please set up the Google Apps Script URL first.');
