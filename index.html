@@ -455,7 +455,7 @@
     </div>
     <div class="form-group">
       <label>Phone Address</label>
-      <input type="phone" id="guestPhone" placeholder="Phone Number" required>
+      <input type="tel" id="guestPhone" placeholder="e.g. 0244123456" pattern="[0-9+\s\-]{7,15}" title="Enter a valid phone number">
     </div>
     <div class="form-group">
       <label>Number of Guests</label>
@@ -601,12 +601,15 @@ function selectAttendance(val) {
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxpikvBUdW8fDOW37TA2tILFC3c8PwgsvokvxWL_9zZLi3Fg5AH-jZoiNjp6e1ZSk6nYw/exec';
 
 async function submitRSVP() {
-  const name = document.getElementById('guestName').value.trim();
+   const name = document.getElementById('guestName').value.trim();
   const phone = document.getElementById('guestPhone').value.trim();
   const count = document.getElementById('guestCount').value;
   const message = document.getElementById('guestMessage').value.trim();
 
   if (!name) { alert('Please enter your name.'); return; }
+
+  const phonePattern = /^[0-9+\s\-]{7,15}$/;
+  if (!phonePattern.test(phone)) { alert('Please enter a valid phone number.'); return; }
 
   const btn = document.getElementById('submitBtn');
   btn.disabled = true;
